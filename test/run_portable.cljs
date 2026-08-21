@@ -20,7 +20,8 @@
          '[kotoba.raytrace.config-test]
          '[kotoba.raytrace.gpu-test]
          '[kotoba.raytrace.wgsl-test]
-         '[kotoba.raytrace.denoise-test])
+         '[kotoba.raytrace.denoise-test]
+         '[kotoba.raytrace.path-test])
 
 (defmethod t/report [:cljs.test/default :end-run-tests] [m]
   (when-not (t/successful? m) (set! (.-exitCode js/process) 1)))
@@ -30,4 +31,5 @@
               'kotoba.raytrace.config-test
               'kotoba.raytrace.gpu-test
               'kotoba.raytrace.wgsl-test
-              'kotoba.raytrace.denoise-test)
+              'kotoba.raytrace.denoise-test
+              'kotoba.raytrace.path-test)
