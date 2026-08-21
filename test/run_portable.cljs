@@ -19,7 +19,8 @@
          '[kotoba.raytrace.bvh-test]
          '[kotoba.raytrace.config-test]
          '[kotoba.raytrace.gpu-test]
-         '[kotoba.raytrace.wgsl-test])
+         '[kotoba.raytrace.wgsl-test]
+         '[kotoba.raytrace.denoise-test])
 
 (defmethod t/report [:cljs.test/default :end-run-tests] [m]
   (when-not (t/successful? m) (set! (.-exitCode js/process) 1)))
@@ -28,4 +29,5 @@
               'kotoba.raytrace.bvh-test
               'kotoba.raytrace.config-test
               'kotoba.raytrace.gpu-test
-              'kotoba.raytrace.wgsl-test)
+              'kotoba.raytrace.wgsl-test
+              'kotoba.raytrace.denoise-test)
