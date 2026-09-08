@@ -1,7 +1,7 @@
 (ns kotoba.raytrace.wgsl-test
   "Parity port of kami-rt's lib.rs `#[cfg(test)] mod tests`."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [kotoba.raytrace.wgsl :as wgsl]))
 
 (deftest wgsl-bakes-integrator-params

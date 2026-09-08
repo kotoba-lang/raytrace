@@ -30,7 +30,7 @@
   transport, and multiple importance sampling — with only diffuse surfaces and
   uniform lights the two estimators here do not need a weighting scheme, and
   writing one that is never exercised would be decoration."
-  (:require [clojure.string :as string]))
+  (:require [kotoba.lang.text :as string]))
 
 (defn- v+ [a b] (mapv + a b))
 (defn- v- [a b] (mapv - a b))
