@@ -2,7 +2,7 @@
   "Parity port of the top-level consts asserted implicitly by kami-rt's
    lib.rs (ADR/PHASE/KAMI_NAME/NV_COMPAT_TARGET) plus the public re-exports."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [kotoba.raytrace :as rt]))
 
 (deftest top-level-consts-match-rust-source

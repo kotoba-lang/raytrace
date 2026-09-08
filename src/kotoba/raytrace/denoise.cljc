@@ -38,7 +38,7 @@
   Not here: temporal accumulation and reprojection (the T in SVGF), variance
   estimation from per-pixel sample moments, firefly rejection, and any learned
   prior. This is the spatial half."
-  (:require [clojure.string :as string]))
+  (:require [kotoba.lang.text :as string]))
 
 (defn- clampi [x lo hi] (max lo (min hi x)))
 (defn- sq [x] (* x x))

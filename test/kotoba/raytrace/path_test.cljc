@@ -1,6 +1,6 @@
 (ns kotoba.raytrace.path-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as string]
+            [kotoba.lang.text :as string]
             [kotoba.raytrace.path :as path]))
 
 (defn- abs* [x] (#?(:clj Math/abs :cljs js/Math.abs) (double x)))

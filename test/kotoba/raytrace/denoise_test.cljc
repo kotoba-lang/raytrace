@@ -1,6 +1,6 @@
 (ns kotoba.raytrace.denoise-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as string]
+            [kotoba.lang.text :as string]
             [kotoba.raytrace.denoise :as dn]))
 
 (def ^:private W 64)
