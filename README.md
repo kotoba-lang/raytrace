@@ -65,8 +65,8 @@ every platform.
 ## Test / lint
 
 ```sh
-clojure -M:test
-clojure -M:lint
+kbb -M:test
+kbb -M:lint
 ```
 
 ## License
