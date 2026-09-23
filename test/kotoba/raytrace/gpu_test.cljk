@@ -1,6 +1,6 @@
 (ns kotoba.raytrace.gpu-test
   "Parity port of kami-rt's gpu.rs `#[cfg(test)] mod tests`."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.raytrace.vec3 :as vec3]
             [kotoba.raytrace.bvh :as bvh]
             [kotoba.raytrace.gpu :as gpu]))
