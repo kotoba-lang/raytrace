@@ -1,7 +1,7 @@
 (ns kotoba.raytrace-test
   "Parity port of the top-level consts asserted implicitly by kami-rt's
    lib.rs (ADR/PHASE/KAMI_NAME/NV_COMPAT_TARGET) plus the public re-exports."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.lang.text :as str]
             [kotoba.raytrace :as rt]))
 

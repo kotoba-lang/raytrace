@@ -1,7 +1,7 @@
 (ns kotoba.raytrace.config-test
   "config.edn (JVM classpath resource) must match the cljs `embedded`
    fallback exactly, or the two platforms silently diverge on BVH tunables."
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.test :refer [deftest is]]
             [kotoba.raytrace.config :as config]))
 
 (deftest resource-matches-embedded-fallback
