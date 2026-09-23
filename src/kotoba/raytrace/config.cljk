@@ -13,7 +13,7 @@
    tooling. `load-config` reconstitutes the plain map `embedded` expects:
    strips :db/id and unblobs any pr-str'd non-scalar attr values
    (:rt/default-config's nested map) back to real Clojure data."
-  #?(:clj (:require [clojure.edn :as edn]
+  #?(:clj (:require [kotoba.lang.edn :as edn]
                      [clojure.java.io :as io])))
 
 (def embedded
