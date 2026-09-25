@@ -14,7 +14,7 @@
    strips :db/id and unblobs any pr-str'd non-scalar attr values
    (:rt/default-config's nested map) back to real Clojure data."
   #?(:clj (:require [kotoba.lang.edn :as edn]
-                     [clojure.java.io :as io])))
+                     [kotoba.io :as io])))
 
 (def embedded
   "cljs fallback / cross-check fixture — must equal config.edn exactly."
